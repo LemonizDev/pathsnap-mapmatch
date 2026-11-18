@@ -72,6 +72,11 @@ class Settings:
     
     # Derived: available trip IDs from student_test partition
     student_test_trip_ids: list[str] = None
+    
+    @property
+    def mock_enabled(self) -> bool:
+        """Read MOCK_MODE from environment dynamically."""
+        return os.getenv("MOCK_MODE", "true").lower() == "true"
 
 
 def _default_real_model_path() -> Path:
