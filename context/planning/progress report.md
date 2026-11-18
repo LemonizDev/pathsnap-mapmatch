@@ -245,4 +245,5 @@ to:
 “Train and evaluate a model that solves it”
 ```
 
-The next meaningful milestone is to fix the feature-engineering failures, make the real-data inventory complete, run the smoke test, and train the first baseline model.
+• The upcoming milestone focuses on resolving feature-engineering failures, completing the real-data inventory, running a smoke test, and training the first baseline model.
+
