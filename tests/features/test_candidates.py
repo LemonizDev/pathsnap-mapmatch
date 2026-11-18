@@ -49,7 +49,8 @@ def test_perpendicular_distance_to_segment():
     # Point perpendicular to segment midpoint
     dist, along = perpendicular_distance_to_segment(0, 1, -1, 0, 1, 0)
     assert abs(dist - 1.0) < 1e-10
-    assert abs(along) < 1e-10
+    # Along-track distance from start (-1,0) to midpoint (0,0) is 1.0
+    assert abs(along - 1.0) < 1e-10
     
     # Point beyond segment end
     dist, along = perpendicular_distance_to_segment(2, 0, -1, 0, 1, 0)

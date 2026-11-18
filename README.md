@@ -127,6 +127,69 @@ Per-trip directory with 4 files (whitespace-separated, no headers):
 
 ---
 
+## Frontend Demonstration UI
+
+The frontend lives in ``src/ui/`` and is a Streamlit app that calls the
+documented FastAPI contract (``context/initial/ARCHITECTURE.md``):
+
+- ``GET  /health`` — backend readiness (model/HMM loaded, trip count)
+- ``POST /predict`` ``{ "trip_id": "..." }`` →
+  ``{ "trip_id", "predicted_route", "accuracy", "map_html", "latencies_ms" }``
+
+The backend URL is configured through the ``API_BASE_URL`` environment variable
+(default ``http://localhost:8000``). A deterministic demo/mock fallback mode
+runs without any backend for local UI development. Ground truth is never
+exposed to the client; the UI only displays the server-computed accuracy and
+predicted route.
+
+### Install
+
+```bash
+# From the repo root (Python 3.11+ recommended)
+python -m venv venv
+venv\Scripts\activate          # Windows
+# source venv/bin/activate     # Linux/Mac
+
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+`streamlit` and `folium` are already declared in ``requirements.txt``.
+
+### Startup
+
+**Against a real backend (backend on LAN IP, e.g. Laptop 1):**
+
+```powershell
+# Backend (Laptop 1, run first, bind to 0.0.0.0 for LAN access)
+python -m uvicorn api.main:app --host 0.0.0.0 --port 8000
+
+# Frontend (Laptop 2 — use the backend laptop's LAN IP, not localhost)
+$env:API_BASE_URL = "http://192.168.1.47:8000"   # replace with actual LAN IP
+streamlit run src/ui/app.py --server.port 8501 --server.address 0.0.0.0
+```
+
+**Local demo / mock mode (no backend):**
+
+```powershell
+streamlit run src/ui/app.py --server.port 8501
+```
+
+Then toggle "Demo mode (no backend)" in the sidebar to use deterministic mock
+predictions without calling the backend.
+
+The UI is available at `http://localhost:8501` (or the LAN IP of the frontend
+laptop when `--server.address 0.0.0.0` is used).
+
+### Features
+
+- Trip selector for the 10 student-test trip IDs
+- Predict button → ``POST /predict``
+- Predicted route arc IDs, accuracy, and per-stage latency (ms)
+- Folium route map rendered from the backend ``map_html``
+- Clear error display when the backend is unavailable, with a demo-mode fallback
+- Backend URL configurable via ``API_BASE_URL``
+
 ## Academic Integrity
 
 - All code independently implemented

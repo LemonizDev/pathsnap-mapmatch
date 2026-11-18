@@ -1,0 +1,17 @@
+{
+  "model_name": "TestLogisticRegression",
+  "feature_names": [
+    "perp_distance_m",
+    "along_track_dist_m",
+    "bearing_diff_deg",
+    "speed_m_s",
+    "time_delta_s",
+    "arc_length_m",
+    "from_node_out_degree",
+    "to_node_in_degree",
+    "arc_connectivity",
+    "candidate_rank",
+    "is_continuation"
+  ],
+  "n_features": 11
+}

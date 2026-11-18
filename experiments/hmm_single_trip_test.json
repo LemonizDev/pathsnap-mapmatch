@@ -1,0 +1,129 @@
+{
+  "trip_id": "test_trip",
+  "config": {
+    "k": 5,
+    "radius_meters": 50.0,
+    "emission_lambda": 0.05,
+    "hop_penalty": 1.0,
+    "gap_penalty": 10.0,
+    "max_hops": 3
+  },
+  "steps": {
+    "candidates": {
+      "time_seconds": 0.0010297298431396484,
+      "num_observations": 10,
+      "candidates_per_obs": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "miss_rate": 0.0
+    },
+    "features": {
+      "time_seconds": 0.00019359588623046875,
+      "matrix_shape": [
+        40,
+        11
+      ],
+      "num_features": 11,
+      "positive_labels": 10,
+      "negative_labels": 30
+    },
+    "emissions": {
+      "time_seconds": 0.0013263225555419922,
+      "T": 10,
+      "max_K": 4,
+      "log_emission_range": [
+        -100.0,
+        -1.8212727599637482
+      ]
+    },
+    "transitions": {
+      "time_seconds": 0.00014662742614746094,
+      "num_transitions": 9,
+      "transition_shapes": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    },
+    "viterbi": {
+      "time_seconds": 0.001129150390625,
+      "best_log_prob": -44.3757990942284,
+      "path_arc_ids": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      "path_indices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "comparison": {
+      "time_seconds": 0.02480602264404297,
+      "classifier_top1": 1.0,
+      "hmm_top1": 1.0,
+      "classifier_continuity": 0.3333333333333333,
+      "hmm_continuity": 0.3333333333333333,
+      "improvement_top1": 0.0,
+      "improvement_continuity": 0.0
+    }
+  },
+  "total_time_seconds": 0.02863144874572754
+}

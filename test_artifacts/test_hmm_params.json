@@ -1,0 +1,10 @@
+{
+  "distance_penalty_lambda": 0.05,
+  "min_log_prob": -100.0,
+  "max_log_prob": 0.0,
+  "hop_penalty": 1.0,
+  "gap_penalty": 10.0,
+  "max_hops": 3,
+  "stay_bonus": 0.0,
+  "initial_log_prob": 0.0
+}

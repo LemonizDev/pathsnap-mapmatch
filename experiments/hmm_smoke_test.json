@@ -1,0 +1,231 @@
+{
+  "num_trips": 3,
+  "classifier_avg_top1": 0.9333333333333332,
+  "hmm_avg_top1": 1.0,
+  "classifier_avg_continuity": 0.21428571428571427,
+  "hmm_avg_continuity": 0.21428571428571427,
+  "per_trip": [
+    {
+      "trip_id": "synthetic_000",
+      "n_observations": 15,
+      "classifier": {
+        "top1_accuracy": 0.9333333333333333,
+        "route_continuity": 0.21428571428571427,
+        "sequence_f1": 0.9333333333333333,
+        "macro_f1": null,
+        "logloss": 0.17873021688269947
+      },
+      "hmm": {
+        "top1_accuracy": 1.0,
+        "route_continuity": 0.21428571428571427,
+        "sequence_f1": 1.0,
+        "macro_f1": null,
+        "logloss": 0.17873021688269947
+      },
+      "classifier_route": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "hmm_route": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "ground_truth_route": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "improvement": {
+        "top1_accuracy": 0.06666666666666665,
+        "route_continuity": 0.0,
+        "sequence_f1": 0.06666666666666665
+      }
+    },
+    {
+      "trip_id": "synthetic_001",
+      "n_observations": 15,
+      "classifier": {
+        "top1_accuracy": 0.9333333333333333,
+        "route_continuity": 0.21428571428571427,
+        "sequence_f1": 0.9333333333333333,
+        "macro_f1": null,
+        "logloss": 0.21277994271875592
+      },
+      "hmm": {
+        "top1_accuracy": 1.0,
+        "route_continuity": 0.21428571428571427,
+        "sequence_f1": 1.0,
+        "macro_f1": null,
+        "logloss": 0.21277994271875592
+      },
+      "classifier_route": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "hmm_route": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "ground_truth_route": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "improvement": {
+        "top1_accuracy": 0.06666666666666665,
+        "route_continuity": 0.0,
+        "sequence_f1": 0.06666666666666665
+      }
+    },
+    {
+      "trip_id": "synthetic_002",
+      "n_observations": 15,
+      "classifier": {
+        "top1_accuracy": 0.9333333333333333,
+        "route_continuity": 0.21428571428571427,
+        "sequence_f1": 0.9333333333333333,
+        "macro_f1": null,
+        "logloss": 0.18607978413627935
+      },
+      "hmm": {
+        "top1_accuracy": 1.0,
+        "route_continuity": 0.21428571428571427,
+        "sequence_f1": 1.0,
+        "macro_f1": null,
+        "logloss": 0.18607978413627935
+      },
+      "classifier_route": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "hmm_route": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "ground_truth_route": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "improvement": {
+        "top1_accuracy": 0.06666666666666665,
+        "route_continuity": 0.0,
+        "sequence_f1": 0.06666666666666665
+      }
+    }
+  ]
+}

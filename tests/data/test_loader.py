@@ -103,8 +103,8 @@ def test_load_trip_invalid_coordinates():
         trip_dir = base / "00000001"
         trip_dir.mkdir()
         
-        # Invalid longitude
-        (trip_dir / "00000001.track").write_text("100.0\t49.844053\t1.0")
+        # Invalid longitude (outside WGS84 [-180, 180])
+        (trip_dir / "00000001.track").write_text("200.0\t49.844053\t1.0")
         (trip_dir / "00000001.nodes").write_text("8.581679\t49.857880")
         (trip_dir / "00000001.arcs").write_text("0\t0")
         (trip_dir / "00000001.route").write_text("0")

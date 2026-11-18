@@ -62,9 +62,11 @@ class DataValidationError(Exception):
     pass
 
 
-# Expected coordinate bounds for the dataset (Germany region)
-LON_MIN, LON_MAX = 8.0, 9.5
-LAT_MIN, LAT_MAX = 49.0, 51.0
+# Expected coordinate bounds for the dataset (full valid WGS84 range)
+# Dataset spans multiple continents: lon [-180, 180], lat [-90, 90]
+# This retains geographic sanity checks while allowing all supplied data
+LON_MIN, LON_MAX = -180.0, 180.0
+LAT_MIN, LAT_MAX = -90.0, 90.0
 MAX_TIMESTAMP_GAP = 60.0  # seconds
 
 

@@ -76,6 +76,7 @@ def compute_adjacency(arcs: np.ndarray, num_arcs: int, max_hops: int = 2) -> Dic
 
 
 def extract_candidate_features(
+    candidate: Candidate,
     candidate_set: CandidateSet,
     trip: TripData,
     arc_lengths: np.ndarray,
@@ -101,7 +102,7 @@ def extract_candidate_features(
     10. candidate_rank (1-based, by distance)
     11. is_continuation (1 if prev_candidate_arc connects to this arc)
     """
-    cand = candidate_set.candidate
+    cand = candidate
     obs_idx = candidate_set.obs_idx
     
     # Get arc info
@@ -216,7 +217,7 @@ def build_feature_matrix(
         
         for rank, cand in enumerate(sorted_candidates):
             fv = extract_candidate_features(
-                cand_set, trip, arc_lengths, in_degree, out_degree, adjacency,
+                cand, cand_set, trip, arc_lengths, in_degree, out_degree, adjacency,
                 prev_candidate_arc=prev_candidate_arc,
                 prev_timestamp=prev_timestamp,
             )

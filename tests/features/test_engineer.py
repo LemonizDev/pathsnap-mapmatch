@@ -74,9 +74,9 @@ def test_compute_arc_lengths():
     lengths = compute_arc_lengths(trip.nodes, trip.arcs)
     
     assert len(lengths) == 4
-    # All edges should be ~111km (1 degree at this latitude)
+    # Edges are 0.1 degree: horizontal ~7.1km at lat 49.8, vertical ~11.1km
     for l in lengths:
-        assert 100000 < l < 120000
+        assert 7000 < l < 12000
 
 
 def test_compute_adjacency():
@@ -104,7 +104,7 @@ def test_extract_candidate_features():
     cand = Candidate(arc_id=0, distance=10.0, along_track_dist=5000.0, bearing_diff=5.0, midpoint_dist=10000.0)
     cand_set = CandidateSet(0, 8.52, 49.8, 1.0, [cand])
     
-    fv = extract_candidate_features(cand_set, trip, arc_lengths, in_deg, out_deg, adj)
+    fv = extract_candidate_features(cand, cand_set, trip, arc_lengths, in_deg, out_deg, adj)
     
     assert fv.features.shape == (11,)
     assert len(fv.feature_names) == 11

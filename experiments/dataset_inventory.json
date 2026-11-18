@@ -1,0 +1,2128 @@
+{
+  "train": {
+    "num_trips": 80,
+    "total_gps_observations": 208417,
+    "total_nodes": 1933485,
+    "total_arcs": 3876904,
+    "total_route_arcs": 31336,
+    "avg_obs_per_trip": 2605.2125,
+    "avg_nodes_per_trip": 24168.5625,
+    "avg_arcs_per_trip": 48461.3,
+    "avg_route_len": 391.7,
+    "lon_range": [
+      -100.418538,
+      137.237029
+    ],
+    "lat_range": [
+      -34.640291,
+      61.267258
+    ],
+    "timestamp_range": [
+      1.0,
+      154034.0
+    ],
+    "trip_ids": [
+      "00000001",
+      "00000002",
+      "00000003",
+      "00000004",
+      "00000005",
+      "00000006",
+      "00000008",
+      "00000010",
+      "00000011",
+      "00000012",
+      "00000013",
+      "00000014",
+      "00000016",
+      "00000018",
+      "00000019",
+      "00000020",
+      "00000021",
+      "00000022",
+      "00000024",
+      "00000025",
+      "00000026",
+      "00000027",
+      "00000028",
+      "00000029",
+      "00000031",
+      "00000032",
+      "00000033",
+      "00000034",
+      "00000035",
+      "00000036",
+      "00000037",
+      "00000038",
+      "00000039",
+      "00000041",
+      "00000042",
+      "00000043",
+      "00000044",
+      "00000045",
+      "00000046",
+      "00000047",
+      "00000048",
+      "00000050",
+      "00000051",
+      "00000053",
+      "00000054",
+      "00000055",
+      "00000057",
+      "00000058",
+      "00000060",
+      "00000061",
+      "00000062",
+      "00000063",
+      "00000064",
+      "00000066",
+      "00000068",
+      "00000069",
+      "00000070",
+      "00000071",
+      "00000072",
+      "00000074",
+      "00000075",
+      "00000078",
+      "00000079",
+      "00000080",
+      "00000081",
+      "00000082",
+      "00000083",
+      "00000084",
+      "00000085",
+      "00000086",
+      "00000088",
+      "00000089",
+      "00000090",
+      "00000092",
+      "00000093",
+      "00000095",
+      "00000096",
+      "00000097",
+      "00000098",
+      "00000099"
+    ],
+    "partition": "train",
+    "per_trip": [
+      {
+        "trip_id": "00000001",
+        "num_observations": 1315,
+        "num_nodes": 88809,
+        "num_arcs": 165790,
+        "route_length": 525,
+        "timestamp_range": [
+          1.0,
+          1358.0
+        ],
+        "duration_seconds": 1357.0,
+        "mean_dt": 1.0327245053272451,
+        "max_dt": 16.0,
+        "lon_range": [
+          8.570524,
+          8.64786
+        ],
+        "lat_range": [
+          49.844053,
+          50.211882
+        ]
+      },
+      {
+        "trip_id": "00000002",
+        "num_observations": 7243,
+        "num_nodes": 7936,
+        "num_arcs": 16139,
+        "route_length": 262,
+        "timestamp_range": [
+          1.0,
+          8934.156
+        ],
+        "duration_seconds": 8933.156,
+        "mean_dt": 1.233520574426954,
+        "max_dt": 160.0,
+        "lon_range": [
+          10.999961,
+          11.050902
+        ],
+        "lat_range": [
+          47.658344,
+          47.695459
+        ]
+      },
+      {
+        "trip_id": "00000003",
+        "num_observations": 821,
+        "num_nodes": 9138,
+        "num_arcs": 18028,
+        "route_length": 79,
+        "timestamp_range": [
+          1.0,
+          824.0
+        ],
+        "duration_seconds": 823.0,
+        "mean_dt": 1.0036585365853659,
+        "max_dt": 2.0,
+        "lon_range": [
+          37.154202,
+          37.201595
+        ],
+        "lat_range": [
+          55.977135,
+          56.007585
+        ]
+      },
+      {
+        "trip_id": "00000004",
+        "num_observations": 1064,
+        "num_nodes": 7350,
+        "num_arcs": 15499,
+        "route_length": 320,
+        "timestamp_range": [
+          1.0,
+          5218.0
+        ],
+        "duration_seconds": 5217.0,
+        "mean_dt": 4.907808090310442,
+        "max_dt": 51.0,
+        "lon_range": [
+          12.34228,
+          12.459615
+        ],
+        "lat_range": [
+          52.590308,
+          52.71896
+        ]
+      },
+      {
+        "trip_id": "00000005",
+        "num_observations": 1045,
+        "num_nodes": 898,
+        "num_arcs": 1579,
+        "route_length": 105,
+        "timestamp_range": [
+          1.0,
+          1045.0
+        ],
+        "duration_seconds": 1044.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          35.485577,
+          35.544315
+        ],
+        "lat_range": [
+          49.357581,
+          49.613085
+        ]
+      },
+      {
+        "trip_id": "00000006",
+        "num_observations": 1450,
+        "num_nodes": 3259,
+        "num_arcs": 6757,
+        "route_length": 261,
+        "timestamp_range": [
+          693.0,
+          2795.0
+        ],
+        "duration_seconds": 2102.0,
+        "mean_dt": 1.4506556245686681,
+        "max_dt": 301.0,
+        "lon_range": [
+          37.276002,
+          37.317675
+        ],
+        "lat_range": [
+          55.429164,
+          55.487229
+        ]
+      },
+      {
+        "trip_id": "00000008",
+        "num_observations": 3093,
+        "num_nodes": 4995,
+        "num_arcs": 10421,
+        "route_length": 173,
+        "timestamp_range": [
+          1.0,
+          3094.0
+        ],
+        "duration_seconds": 3093.0,
+        "mean_dt": 1.0003234152652005,
+        "max_dt": 2.0,
+        "lon_range": [
+          -86.58486,
+          -86.567487
+        ],
+        "lat_range": [
+          34.733275,
+          34.753704
+        ]
+      },
+      {
+        "trip_id": "00000010",
+        "num_observations": 2711,
+        "num_nodes": 8502,
+        "num_arcs": 15715,
+        "route_length": 210,
+        "timestamp_range": [
+          1.0,
+          2711.0
+        ],
+        "duration_seconds": 2710.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          37.357893,
+          37.39479
+        ],
+        "lat_range": [
+          55.786261,
+          55.832857
+        ]
+      },
+      {
+        "trip_id": "00000011",
+        "num_observations": 2828,
+        "num_nodes": 2649,
+        "num_arcs": 5393,
+        "route_length": 565,
+        "timestamp_range": [
+          1.0,
+          3736.0
+        ],
+        "duration_seconds": 3735.0,
+        "mean_dt": 1.3211885390873719,
+        "max_dt": 909.0,
+        "lon_range": [
+          59.647057,
+          60.016866
+        ],
+        "lat_range": [
+          56.041788,
+          56.067535
+        ]
+      },
+      {
+        "trip_id": "00000012",
+        "num_observations": 1608,
+        "num_nodes": 16376,
+        "num_arcs": 38599,
+        "route_length": 205,
+        "timestamp_range": [
+          1.0,
+          1609.0
+        ],
+        "duration_seconds": 1608.0,
+        "mean_dt": 1.000622277535781,
+        "max_dt": 2.0,
+        "lon_range": [
+          44.044515,
+          44.389906
+        ],
+        "lat_range": [
+          36.175914,
+          36.263587
+        ]
+      },
+      {
+        "trip_id": "00000013",
+        "num_observations": 2580,
+        "num_nodes": 155003,
+        "num_arcs": 307392,
+        "route_length": 788,
+        "timestamp_range": [
+          1.0,
+          2833.0
+        ],
+        "duration_seconds": 2832.0,
+        "mean_dt": 1.0981000387747188,
+        "max_dt": 8.0,
+        "lon_range": [
+          1.464353,
+          2.137165
+        ],
+        "lat_range": [
+          43.636188,
+          43.927134
+        ]
+      },
+      {
+        "trip_id": "00000014",
+        "num_observations": 448,
+        "num_nodes": 4067,
+        "num_arcs": 8288,
+        "route_length": 164,
+        "timestamp_range": [
+          2.0,
+          720.0
+        ],
+        "duration_seconds": 718.0,
+        "mean_dt": 1.6062639821029083,
+        "max_dt": 72.0,
+        "lon_range": [
+          39.170811,
+          39.201605
+        ],
+        "lat_range": [
+          51.715319,
+          51.733034
+        ]
+      },
+      {
+        "trip_id": "00000016",
+        "num_observations": 1305,
+        "num_nodes": 8205,
+        "num_arcs": 15098,
+        "route_length": 204,
+        "timestamp_range": [
+          1.0,
+          1305.0
+        ],
+        "duration_seconds": 1304.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          37.360295,
+          37.39486
+        ],
+        "lat_range": [
+          55.785202,
+          55.832737
+        ]
+      },
+      {
+        "trip_id": "00000018",
+        "num_observations": 379,
+        "num_nodes": 5980,
+        "num_arcs": 11545,
+        "route_length": 166,
+        "timestamp_range": [
+          1.0,
+          452.0
+        ],
+        "duration_seconds": 451.0,
+        "mean_dt": 1.193121693121693,
+        "max_dt": 3.0,
+        "lon_range": [
+          -8.498238,
+          -8.448941
+        ],
+        "lat_range": [
+          40.584524,
+          40.595446
+        ]
+      },
+      {
+        "trip_id": "00000019",
+        "num_observations": 2354,
+        "num_nodes": 52694,
+        "num_arcs": 108517,
+        "route_length": 545,
+        "timestamp_range": [
+          1.0,
+          2354.0
+        ],
+        "duration_seconds": 2353.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          6.893696,
+          7.382203
+        ],
+        "lat_range": [
+          52.105923,
+          52.223884
+        ]
+      },
+      {
+        "trip_id": "00000020",
+        "num_observations": 2353,
+        "num_nodes": 2739,
+        "num_arcs": 5958,
+        "route_length": 142,
+        "timestamp_range": [
+          1.0,
+          2353.0
+        ],
+        "duration_seconds": 2352.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          24.354626,
+          24.595931
+        ],
+        "lat_range": [
+          52.56,
+          52.764968
+        ]
+      },
+      {
+        "trip_id": "00000021",
+        "num_observations": 15783,
+        "num_nodes": 732,
+        "num_arcs": 1510,
+        "route_length": 277,
+        "timestamp_range": [
+          2.0,
+          18607.0
+        ],
+        "duration_seconds": 18605.0,
+        "mean_dt": 1.178874667342542,
+        "max_dt": 2161.0,
+        "lon_range": [
+          106.377397,
+          106.733064
+        ],
+        "lat_range": [
+          15.345165,
+          15.445932
+        ]
+      },
+      {
+        "trip_id": "00000022",
+        "num_observations": 474,
+        "num_nodes": 9607,
+        "num_arcs": 18982,
+        "route_length": 376,
+        "timestamp_range": [
+          90.0,
+          1527.0
+        ],
+        "duration_seconds": 1437.0,
+        "mean_dt": 3.0380549682875264,
+        "max_dt": 22.0,
+        "lon_range": [
+          -3.629593,
+          -3.538592
+        ],
+        "lat_range": [
+          47.810669,
+          47.888872
+        ]
+      },
+      {
+        "trip_id": "00000024",
+        "num_observations": 801,
+        "num_nodes": 25782,
+        "num_arcs": 51609,
+        "route_length": 249,
+        "timestamp_range": [
+          1.0,
+          1542.0
+        ],
+        "duration_seconds": 1541.0,
+        "mean_dt": 1.92625,
+        "max_dt": 458.0,
+        "lon_range": [
+          8.547344,
+          8.618828
+        ],
+        "lat_range": [
+          49.148019,
+          49.359556
+        ]
+      },
+      {
+        "trip_id": "00000025",
+        "num_observations": 1179,
+        "num_nodes": 38035,
+        "num_arcs": 85639,
+        "route_length": 283,
+        "timestamp_range": [
+          2.0,
+          1541.0
+        ],
+        "duration_seconds": 1539.0,
+        "mean_dt": 1.3064516129032258,
+        "max_dt": 2.0,
+        "lon_range": [
+          -100.418538,
+          -100.268049
+        ],
+        "lat_range": [
+          25.685408,
+          25.76763
+        ]
+      },
+      {
+        "trip_id": "00000026",
+        "num_observations": 361,
+        "num_nodes": 2580,
+        "num_arcs": 5043,
+        "route_length": 197,
+        "timestamp_range": [
+          1.0,
+          894.0
+        ],
+        "duration_seconds": 893.0,
+        "mean_dt": 2.4805555555555556,
+        "max_dt": 17.0,
+        "lon_range": [
+          -80.442099,
+          -80.41465
+        ],
+        "lat_range": [
+          37.144431,
+          37.155287
+        ]
+      },
+      {
+        "trip_id": "00000027",
+        "num_observations": 694,
+        "num_nodes": 2756,
+        "num_arcs": 5588,
+        "route_length": 138,
+        "timestamp_range": [
+          1.0,
+          708.0
+        ],
+        "duration_seconds": 707.0,
+        "mean_dt": 1.02020202020202,
+        "max_dt": 2.0,
+        "lon_range": [
+          18.898135,
+          18.940049
+        ],
+        "lat_range": [
+          49.527172,
+          49.555234
+        ]
+      },
+      {
+        "trip_id": "00000028",
+        "num_observations": 3565,
+        "num_nodes": 60628,
+        "num_arcs": 127216,
+        "route_length": 618,
+        "timestamp_range": [
+          1.0,
+          4135.0
+        ],
+        "duration_seconds": 4134.0,
+        "mean_dt": 1.15993265993266,
+        "max_dt": 196.0,
+        "lon_range": [
+          60.309682,
+          61.41359
+        ],
+        "lat_range": [
+          54.922289,
+          55.142105
+        ]
+      },
+      {
+        "trip_id": "00000029",
+        "num_observations": 733,
+        "num_nodes": 10825,
+        "num_arcs": 20868,
+        "route_length": 204,
+        "timestamp_range": [
+          1.0,
+          733.0
+        ],
+        "duration_seconds": 732.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          37.322391,
+          37.391779
+        ],
+        "lat_range": [
+          55.790669,
+          55.821113
+        ]
+      },
+      {
+        "trip_id": "00000031",
+        "num_observations": 4245,
+        "num_nodes": 59059,
+        "num_arcs": 125831,
+        "route_length": 432,
+        "timestamp_range": [
+          1.0,
+          4245.0
+        ],
+        "duration_seconds": 4244.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          50.18354,
+          50.764836
+        ],
+        "lat_range": [
+          53.207514,
+          53.473253
+        ]
+      },
+      {
+        "trip_id": "00000032",
+        "num_observations": 2464,
+        "num_nodes": 124540,
+        "num_arcs": 259437,
+        "route_length": 819,
+        "timestamp_range": [
+          2.0,
+          2830.0
+        ],
+        "duration_seconds": 2828.0,
+        "mean_dt": 1.1481932602517255,
+        "max_dt": 41.0,
+        "lon_range": [
+          12.398139,
+          13.315247
+        ],
+        "lat_range": [
+          51.883443,
+          52.308951
+        ]
+      },
+      {
+        "trip_id": "00000033",
+        "num_observations": 5844,
+        "num_nodes": 3340,
+        "num_arcs": 6360,
+        "route_length": 169,
+        "timestamp_range": [
+          1.0,
+          6253.0
+        ],
+        "duration_seconds": 6252.0,
+        "mean_dt": 1.0699982885504022,
+        "max_dt": 3.0,
+        "lon_range": [
+          18.694146,
+          18.718013
+        ],
+        "lat_range": [
+          50.018685,
+          50.045012
+        ]
+      },
+      {
+        "trip_id": "00000034",
+        "num_observations": 3614,
+        "num_nodes": 19597,
+        "num_arcs": 40971,
+        "route_length": 454,
+        "timestamp_range": [
+          2.0,
+          3857.0
+        ],
+        "duration_seconds": 3855.0,
+        "mean_dt": 1.0669803487406588,
+        "max_dt": 15.0,
+        "lon_range": [
+          44.260728,
+          44.510744
+        ],
+        "lat_range": [
+          40.188342,
+          40.364683
+        ]
+      },
+      {
+        "trip_id": "00000035",
+        "num_observations": 1643,
+        "num_nodes": 21126,
+        "num_arcs": 35212,
+        "route_length": 403,
+        "timestamp_range": [
+          1.0,
+          1643.0
+        ],
+        "duration_seconds": 1642.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          12.51709,
+          12.617445
+        ],
+        "lat_range": [
+          41.849469,
+          41.872269
+        ]
+      },
+      {
+        "trip_id": "00000036",
+        "num_observations": 1368,
+        "num_nodes": 4528,
+        "num_arcs": 9619,
+        "route_length": 156,
+        "timestamp_range": [
+          1.0,
+          1368.0
+        ],
+        "duration_seconds": 1367.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          30.074804,
+          30.159635
+        ],
+        "lat_range": [
+          59.557742,
+          59.600565
+        ]
+      },
+      {
+        "trip_id": "00000037",
+        "num_observations": 677,
+        "num_nodes": 9472,
+        "num_arcs": 21744,
+        "route_length": 163,
+        "timestamp_range": [
+          1.0,
+          934.0
+        ],
+        "duration_seconds": 933.0,
+        "mean_dt": 1.3801775147928994,
+        "max_dt": 52.0,
+        "lon_range": [
+          137.197657,
+          137.237029
+        ],
+        "lat_range": [
+          36.667355,
+          36.695646
+        ]
+      },
+      {
+        "trip_id": "00000038",
+        "num_observations": 1287,
+        "num_nodes": 21046,
+        "num_arcs": 42026,
+        "route_length": 221,
+        "timestamp_range": [
+          1.0,
+          1452.0
+        ],
+        "duration_seconds": 1451.0,
+        "mean_dt": 1.1283048211508553,
+        "max_dt": 20.0,
+        "lon_range": [
+          27.449035,
+          27.528154
+        ],
+        "lat_range": [
+          53.843719,
+          53.913008
+        ]
+      },
+      {
+        "trip_id": "00000039",
+        "num_observations": 363,
+        "num_nodes": 1185,
+        "num_arcs": 2388,
+        "route_length": 161,
+        "timestamp_range": [
+          1.0,
+          887.0
+        ],
+        "duration_seconds": 886.0,
+        "mean_dt": 2.447513812154696,
+        "max_dt": 10.0,
+        "lon_range": [
+          24.400559,
+          24.482813
+        ],
+        "lat_range": [
+          60.417067,
+          60.455491
+        ]
+      },
+      {
+        "trip_id": "00000041",
+        "num_observations": 1019,
+        "num_nodes": 7837,
+        "num_arcs": 14317,
+        "route_length": 340,
+        "timestamp_range": [
+          1.0,
+          1121.0
+        ],
+        "duration_seconds": 1120.0,
+        "mean_dt": 1.100196463654224,
+        "max_dt": 89.0,
+        "lon_range": [
+          -8.751518,
+          -8.657987
+        ],
+        "lat_range": [
+          40.596287,
+          40.631925
+        ]
+      },
+      {
+        "trip_id": "00000042",
+        "num_observations": 7739,
+        "num_nodes": 49376,
+        "num_arcs": 101128,
+        "route_length": 1440,
+        "timestamp_range": [
+          1.0,
+          12378.0
+        ],
+        "duration_seconds": 12377.0,
+        "mean_dt": 1.599508917032825,
+        "max_dt": 670.0,
+        "lon_range": [
+          123.911786,
+          124.050254
+        ],
+        "lat_range": [
+          10.335168,
+          10.881855
+        ]
+      },
+      {
+        "trip_id": "00000043",
+        "num_observations": 2322,
+        "num_nodes": 109070,
+        "num_arcs": 215620,
+        "route_length": 427,
+        "timestamp_range": [
+          1.0,
+          2643.0
+        ],
+        "duration_seconds": 2642.0,
+        "mean_dt": 1.1383024558380008,
+        "max_dt": 230.0,
+        "lon_range": [
+          4.861421,
+          5.106271
+        ],
+        "lat_range": [
+          51.894451,
+          52.299161
+        ]
+      },
+      {
+        "trip_id": "00000044",
+        "num_observations": 546,
+        "num_nodes": 4386,
+        "num_arcs": 9209,
+        "route_length": 130,
+        "timestamp_range": [
+          1.0,
+          981.0
+        ],
+        "duration_seconds": 980.0,
+        "mean_dt": 1.798165137614679,
+        "max_dt": 341.0,
+        "lon_range": [
+          39.237245,
+          39.275171
+        ],
+        "lat_range": [
+          51.610279,
+          51.657122
+        ]
+      },
+      {
+        "trip_id": "00000045",
+        "num_observations": 640,
+        "num_nodes": 2034,
+        "num_arcs": 4335,
+        "route_length": 59,
+        "timestamp_range": [
+          1.0,
+          640.0
+        ],
+        "duration_seconds": 639.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          12.781634,
+          12.842308
+        ],
+        "lat_range": [
+          52.004156,
+          52.082639
+        ]
+      },
+      {
+        "trip_id": "00000046",
+        "num_observations": 1401,
+        "num_nodes": 299,
+        "num_arcs": 649,
+        "route_length": 66,
+        "timestamp_range": [
+          21.0,
+          2321.0
+        ],
+        "duration_seconds": 2300.0,
+        "mean_dt": 1.6428571428571428,
+        "max_dt": 22.0,
+        "lon_range": [
+          2.938989,
+          2.970447
+        ],
+        "lat_range": [
+          48.506922,
+          48.514766
+        ]
+      },
+      {
+        "trip_id": "00000047",
+        "num_observations": 1272,
+        "num_nodes": 18388,
+        "num_arcs": 39747,
+        "route_length": 188,
+        "timestamp_range": [
+          1.0,
+          1272.0
+        ],
+        "duration_seconds": 1271.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          136.587361,
+          136.680687
+        ],
+        "lat_range": [
+          35.036777,
+          35.064145
+        ]
+      },
+      {
+        "trip_id": "00000048",
+        "num_observations": 1240,
+        "num_nodes": 1308,
+        "num_arcs": 2592,
+        "route_length": 149,
+        "timestamp_range": [
+          1.0,
+          1243.0
+        ],
+        "duration_seconds": 1242.0,
+        "mean_dt": 1.0024213075060533,
+        "max_dt": 4.0,
+        "lon_range": [
+          -1.859966,
+          -1.83316
+        ],
+        "lat_range": [
+          52.957079,
+          52.97496
+        ]
+      },
+      {
+        "trip_id": "00000050",
+        "num_observations": 518,
+        "num_nodes": 2206,
+        "num_arcs": 4576,
+        "route_length": 94,
+        "timestamp_range": [
+          1.0,
+          518.0
+        ],
+        "duration_seconds": 517.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          8.733074,
+          8.774363
+        ],
+        "lat_range": [
+          48.01645,
+          48.032009
+        ]
+      },
+      {
+        "trip_id": "00000051",
+        "num_observations": 984,
+        "num_nodes": 4181,
+        "num_arcs": 8494,
+        "route_length": 299,
+        "timestamp_range": [
+          1.0,
+          990.0
+        ],
+        "duration_seconds": 989.0,
+        "mean_dt": 1.0061037639877926,
+        "max_dt": 2.0,
+        "lon_range": [
+          12.535607,
+          12.616037
+        ],
+        "lat_range": [
+          41.693268,
+          41.726695
+        ]
+      },
+      {
+        "trip_id": "00000053",
+        "num_observations": 1304,
+        "num_nodes": 77905,
+        "num_arcs": 148707,
+        "route_length": 754,
+        "timestamp_range": [
+          1.0,
+          1320.0
+        ],
+        "duration_seconds": 1319.0,
+        "mean_dt": 1.012279355333845,
+        "max_dt": 10.0,
+        "lon_range": [
+          -3.917769,
+          -3.668134
+        ],
+        "lat_range": [
+          43.340457,
+          43.440147
+        ]
+      },
+      {
+        "trip_id": "00000054",
+        "num_observations": 19313,
+        "num_nodes": 63822,
+        "num_arcs": 116916,
+        "route_length": 422,
+        "timestamp_range": [
+          1.0,
+          19524.0
+        ],
+        "duration_seconds": 19523.0,
+        "mean_dt": 1.0109258492129245,
+        "max_dt": 79.0,
+        "lon_range": [
+          4.847402,
+          4.974103
+        ],
+        "lat_range": [
+          52.286164,
+          52.424972
+        ]
+      },
+      {
+        "trip_id": "00000055",
+        "num_observations": 2472,
+        "num_nodes": 98511,
+        "num_arcs": 198961,
+        "route_length": 475,
+        "timestamp_range": [
+          1.0,
+          2659.0
+        ],
+        "duration_seconds": 2658.0,
+        "mean_dt": 1.075677863213274,
+        "max_dt": 184.0,
+        "lon_range": [
+          -0.620796,
+          -0.426822
+        ],
+        "lat_range": [
+          44.899747,
+          45.577873
+        ]
+      },
+      {
+        "trip_id": "00000057",
+        "num_observations": 1645,
+        "num_nodes": 8929,
+        "num_arcs": 18777,
+        "route_length": 300,
+        "timestamp_range": [
+          1.0,
+          1670.0
+        ],
+        "duration_seconds": 1669.0,
+        "mean_dt": 1.0152068126520681,
+        "max_dt": 13.0,
+        "lon_range": [
+          -78.229902,
+          -78.105062
+        ],
+        "lat_range": [
+          0.305315,
+          0.347072
+        ]
+      },
+      {
+        "trip_id": "00000058",
+        "num_observations": 599,
+        "num_nodes": 22367,
+        "num_arcs": 39383,
+        "route_length": 345,
+        "timestamp_range": [
+          1.0,
+          742.0
+        ],
+        "duration_seconds": 741.0,
+        "mean_dt": 1.2391304347826086,
+        "max_dt": 16.0,
+        "lon_range": [
+          2.331603,
+          2.390872
+        ],
+        "lat_range": [
+          51.012564,
+          51.025094
+        ]
+      },
+      {
+        "trip_id": "00000060",
+        "num_observations": 854,
+        "num_nodes": 15128,
+        "num_arcs": 30077,
+        "route_length": 520,
+        "timestamp_range": [
+          17.0,
+          1043.0
+        ],
+        "duration_seconds": 1026.0,
+        "mean_dt": 1.2028135990621336,
+        "max_dt": 27.0,
+        "lon_range": [
+          18.840944,
+          18.964089
+        ],
+        "lat_range": [
+          50.22569,
+          50.259886
+        ]
+      },
+      {
+        "trip_id": "00000061",
+        "num_observations": 1430,
+        "num_nodes": 4947,
+        "num_arcs": 10339,
+        "route_length": 296,
+        "timestamp_range": [
+          1.0,
+          1435.0
+        ],
+        "duration_seconds": 1434.0,
+        "mean_dt": 1.0034989503149054,
+        "max_dt": 3.0,
+        "lon_range": [
+          9.836131,
+          9.868019
+        ],
+        "lat_range": [
+          55.855772,
+          55.870139
+        ]
+      },
+      {
+        "trip_id": "00000062",
+        "num_observations": 3378,
+        "num_nodes": 30613,
+        "num_arcs": 62836,
+        "route_length": 497,
+        "timestamp_range": [
+          11.0,
+          3979.0
+        ],
+        "duration_seconds": 3968.0,
+        "mean_dt": 1.1750074030204323,
+        "max_dt": 56.0,
+        "lon_range": [
+          60.632952,
+          60.803507
+        ],
+        "lat_range": [
+          56.755587,
+          56.869674
+        ]
+      },
+      {
+        "trip_id": "00000063",
+        "num_observations": 2781,
+        "num_nodes": 2617,
+        "num_arcs": 5553,
+        "route_length": 565,
+        "timestamp_range": [
+          3.0,
+          2924.0
+        ],
+        "duration_seconds": 2921.0,
+        "mean_dt": 1.0507194244604317,
+        "max_dt": 2.0,
+        "lon_range": [
+          22.440921,
+          22.540082
+        ],
+        "lat_range": [
+          44.188878,
+          44.236955
+        ]
+      },
+      {
+        "trip_id": "00000064",
+        "num_observations": 2093,
+        "num_nodes": 28258,
+        "num_arcs": 56986,
+        "route_length": 692,
+        "timestamp_range": [
+          1.0,
+          2167.0
+        ],
+        "duration_seconds": 2166.0,
+        "mean_dt": 1.0353728489483747,
+        "max_dt": 4.0,
+        "lon_range": [
+          19.691388,
+          19.991873
+        ],
+        "lat_range": [
+          49.507145,
+          49.707616
+        ]
+      },
+      {
+        "trip_id": "00000066",
+        "num_observations": 4325,
+        "num_nodes": 9609,
+        "num_arcs": 20071,
+        "route_length": 365,
+        "timestamp_range": [
+          1.0,
+          4325.0
+        ],
+        "duration_seconds": 4324.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          48.602314,
+          49.510226
+        ],
+        "lat_range": [
+          53.169655,
+          53.398166
+        ]
+      },
+      {
+        "trip_id": "00000068",
+        "num_observations": 747,
+        "num_nodes": 3537,
+        "num_arcs": 7058,
+        "route_length": 240,
+        "timestamp_range": [
+          13.0,
+          797.0
+        ],
+        "duration_seconds": 784.0,
+        "mean_dt": 1.0509383378016086,
+        "max_dt": 12.0,
+        "lon_range": [
+          -1.69354,
+          -1.642891
+        ],
+        "lat_range": [
+          53.16712,
+          53.21405
+        ]
+      },
+      {
+        "trip_id": "00000069",
+        "num_observations": 2067,
+        "num_nodes": 8556,
+        "num_arcs": 17193,
+        "route_length": 467,
+        "timestamp_range": [
+          1.0,
+          5559.0
+        ],
+        "duration_seconds": 5558.0,
+        "mean_dt": 2.690222652468538,
+        "max_dt": 2658.0,
+        "lon_range": [
+          -52.804119,
+          -52.745174
+        ],
+        "lat_range": [
+          47.523928,
+          47.564999
+        ]
+      },
+      {
+        "trip_id": "00000070",
+        "num_observations": 2076,
+        "num_nodes": 1799,
+        "num_arcs": 3776,
+        "route_length": 149,
+        "timestamp_range": [
+          2.0,
+          2307.0
+        ],
+        "duration_seconds": 2305.0,
+        "mean_dt": 1.110843373493976,
+        "max_dt": 152.0,
+        "lon_range": [
+          -1.531963,
+          -1.474393
+        ],
+        "lat_range": [
+          48.681985,
+          48.735105
+        ]
+      },
+      {
+        "trip_id": "00000071",
+        "num_observations": 850,
+        "num_nodes": 6265,
+        "num_arcs": 14868,
+        "route_length": 186,
+        "timestamp_range": [
+          1.0,
+          1176.2
+        ],
+        "duration_seconds": 1175.2,
+        "mean_dt": 1.3842167255594817,
+        "max_dt": 6.0000000000000036,
+        "lon_range": [
+          27.862405,
+          27.954891
+        ],
+        "lat_range": [
+          -26.231318,
+          -26.212329
+        ]
+      },
+      {
+        "trip_id": "00000072",
+        "num_observations": 969,
+        "num_nodes": 3275,
+        "num_arcs": 7063,
+        "route_length": 131,
+        "timestamp_range": [
+          1.0,
+          969.0
+        ],
+        "duration_seconds": 968.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          39.565934,
+          39.602254
+        ],
+        "lat_range": [
+          50.183508,
+          50.201422
+        ]
+      },
+      {
+        "trip_id": "00000074",
+        "num_observations": 1929,
+        "num_nodes": 34654,
+        "num_arcs": 61055,
+        "route_length": 305,
+        "timestamp_range": [
+          1.0,
+          2130.0
+        ],
+        "duration_seconds": 2129.0,
+        "mean_dt": 1.104253112033195,
+        "max_dt": 24.0,
+        "lon_range": [
+          -9.129873,
+          -8.939147
+        ],
+        "lat_range": [
+          38.696071,
+          38.786742
+        ]
+      },
+      {
+        "trip_id": "00000075",
+        "num_observations": 1628,
+        "num_nodes": 1022,
+        "num_arcs": 2124,
+        "route_length": 108,
+        "timestamp_range": [
+          1.0,
+          1638.0
+        ],
+        "duration_seconds": 1637.0,
+        "mean_dt": 1.0061462814996927,
+        "max_dt": 2.0,
+        "lon_range": [
+          11.963893,
+          11.977587
+        ],
+        "lat_range": [
+          56.002182,
+          56.012372
+        ]
+      },
+      {
+        "trip_id": "00000078",
+        "num_observations": 2909,
+        "num_nodes": 75230,
+        "num_arcs": 151458,
+        "route_length": 1765,
+        "timestamp_range": [
+          3.0,
+          57839.0
+        ],
+        "duration_seconds": 57836.0,
+        "mean_dt": 19.888583218707016,
+        "max_dt": 52810.0,
+        "lon_range": [
+          3.586272,
+          4.19645
+        ],
+        "lat_range": [
+          44.226923,
+          44.36736
+        ]
+      },
+      {
+        "trip_id": "00000079",
+        "num_observations": 689,
+        "num_nodes": 39031,
+        "num_arcs": 72116,
+        "route_length": 182,
+        "timestamp_range": [
+          1.0,
+          689.0
+        ],
+        "duration_seconds": 688.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          37.520765,
+          37.641395
+        ],
+        "lat_range": [
+          55.756688,
+          55.803325
+        ]
+      },
+      {
+        "trip_id": "00000080",
+        "num_observations": 2510,
+        "num_nodes": 10014,
+        "num_arcs": 18746,
+        "route_length": 139,
+        "timestamp_range": [
+          1.0,
+          2752.0
+        ],
+        "duration_seconds": 2751.0,
+        "mean_dt": 1.0964527700278996,
+        "max_dt": 59.0,
+        "lon_range": [
+          -58.511017,
+          -58.391737
+        ],
+        "lat_range": [
+          -34.640291,
+          -34.609083
+        ]
+      },
+      {
+        "trip_id": "00000081",
+        "num_observations": 3224,
+        "num_nodes": 2791,
+        "num_arcs": 5048,
+        "route_length": 778,
+        "timestamp_range": [
+          3.0,
+          8484.0
+        ],
+        "duration_seconds": 8481.0,
+        "mean_dt": 2.631399317406143,
+        "max_dt": 536.0,
+        "lon_range": [
+          -82.190594,
+          -82.111754
+        ],
+        "lat_range": [
+          26.444143,
+          26.510902
+        ]
+      },
+      {
+        "trip_id": "00000082",
+        "num_observations": 4268,
+        "num_nodes": 15696,
+        "num_arcs": 31754,
+        "route_length": 204,
+        "timestamp_range": [
+          1.0,
+          4268.0
+        ],
+        "duration_seconds": 4267.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          30.439792,
+          30.736388
+        ],
+        "lat_range": [
+          59.882156,
+          59.918147
+        ]
+      },
+      {
+        "trip_id": "00000083",
+        "num_observations": 1507,
+        "num_nodes": 12907,
+        "num_arcs": 25393,
+        "route_length": 143,
+        "timestamp_range": [
+          1.0,
+          1507.0
+        ],
+        "duration_seconds": 1506.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          37.818043,
+          37.905618
+        ],
+        "lat_range": [
+          55.67088,
+          55.711392
+        ]
+      },
+      {
+        "trip_id": "00000084",
+        "num_observations": 16031,
+        "num_nodes": 24898,
+        "num_arcs": 50888,
+        "route_length": 627,
+        "timestamp_range": [
+          1.0,
+          16525.0
+        ],
+        "duration_seconds": 16524.0,
+        "mean_dt": 1.0308172177167811,
+        "max_dt": 312.0,
+        "lon_range": [
+          -87.097364,
+          -86.741408
+        ],
+        "lat_range": [
+          34.710965,
+          34.807972
+        ]
+      },
+      {
+        "trip_id": "00000085",
+        "num_observations": 1092,
+        "num_nodes": 690,
+        "num_arcs": 1554,
+        "route_length": 170,
+        "timestamp_range": [
+          1.0,
+          1334.0
+        ],
+        "duration_seconds": 1333.0,
+        "mean_dt": 1.221814848762603,
+        "max_dt": 70.0,
+        "lon_range": [
+          46.307393,
+          46.358368
+        ],
+        "lat_range": [
+          53.840983,
+          53.860113
+        ]
+      },
+      {
+        "trip_id": "00000086",
+        "num_observations": 4143,
+        "num_nodes": 114868,
+        "num_arcs": 237656,
+        "route_length": 671,
+        "timestamp_range": [
+          1.0,
+          4143.0
+        ],
+        "duration_seconds": 4142.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          60.251151,
+          60.805651
+        ],
+        "lat_range": [
+          56.780114,
+          57.272892
+        ]
+      },
+      {
+        "trip_id": "00000088",
+        "num_observations": 876,
+        "num_nodes": 11373,
+        "num_arcs": 24376,
+        "route_length": 163,
+        "timestamp_range": [
+          1.0,
+          1475.0
+        ],
+        "duration_seconds": 1474.0,
+        "mean_dt": 1.6845714285714286,
+        "max_dt": 232.0,
+        "lon_range": [
+          73.406097,
+          73.44833
+        ],
+        "lat_range": [
+          61.233324,
+          61.267258
+        ]
+      },
+      {
+        "trip_id": "00000089",
+        "num_observations": 1228,
+        "num_nodes": 15972,
+        "num_arcs": 32823,
+        "route_length": 265,
+        "timestamp_range": [
+          1.0,
+          2082.0
+        ],
+        "duration_seconds": 2081.0,
+        "mean_dt": 1.6960065199674002,
+        "max_dt": 193.0,
+        "lon_range": [
+          30.301312,
+          30.358962
+        ],
+        "lat_range": [
+          59.989342,
+          60.0262
+        ]
+      },
+      {
+        "trip_id": "00000090",
+        "num_observations": 536,
+        "num_nodes": 4010,
+        "num_arcs": 7942,
+        "route_length": 235,
+        "timestamp_range": [
+          4.0,
+          154034.0
+        ],
+        "duration_seconds": 154030.0,
+        "mean_dt": 287.9065420560748,
+        "max_dt": 153064.0,
+        "lon_range": [
+          10.417463,
+          10.465737
+        ],
+        "lat_range": [
+          51.618723,
+          51.626741
+        ]
+      },
+      {
+        "trip_id": "00000092",
+        "num_observations": 7892,
+        "num_nodes": 26468,
+        "num_arcs": 53348,
+        "route_length": 2266,
+        "timestamp_range": [
+          1.0,
+          7892.0
+        ],
+        "duration_seconds": 7891.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          -3.091551,
+          -2.724756
+        ],
+        "lat_range": [
+          52.855841,
+          52.984839
+        ]
+      },
+      {
+        "trip_id": "00000093",
+        "num_observations": 1211,
+        "num_nodes": 45161,
+        "num_arcs": 85122,
+        "route_length": 590,
+        "timestamp_range": [
+          1.0,
+          1244.0
+        ],
+        "duration_seconds": 1243.0,
+        "mean_dt": 1.0272727272727273,
+        "max_dt": 6.0,
+        "lon_range": [
+          -3.840512,
+          -3.7033
+        ],
+        "lat_range": [
+          43.349849,
+          43.444055
+        ]
+      },
+      {
+        "trip_id": "00000095",
+        "num_observations": 1551,
+        "num_nodes": 1888,
+        "num_arcs": 3723,
+        "route_length": 306,
+        "timestamp_range": [
+          1.0,
+          1556.0
+        ],
+        "duration_seconds": 1555.0,
+        "mean_dt": 1.0032258064516129,
+        "max_dt": 2.0,
+        "lon_range": [
+          -1.290501,
+          -1.268332
+        ],
+        "lat_range": [
+          50.736783,
+          50.758728
+        ]
+      },
+      {
+        "trip_id": "00000096",
+        "num_observations": 3271,
+        "num_nodes": 16893,
+        "num_arcs": 32276,
+        "route_length": 456,
+        "timestamp_range": [
+          1.0,
+          3271.0
+        ],
+        "duration_seconds": 3270.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          -95.869374,
+          -95.331981
+        ],
+        "lat_range": [
+          36.137525,
+          36.262757
+        ]
+      },
+      {
+        "trip_id": "00000097",
+        "num_observations": 1740,
+        "num_nodes": 23566,
+        "num_arcs": 48503,
+        "route_length": 444,
+        "timestamp_range": [
+          1.0,
+          1752.003
+        ],
+        "duration_seconds": 1751.003,
+        "mean_dt": 1.0069022426682002,
+        "max_dt": 2.0,
+        "lon_range": [
+          11.864978,
+          12.220592
+        ],
+        "lat_range": [
+          55.94872,
+          56.05897
+        ]
+      },
+      {
+        "trip_id": "00000098",
+        "num_observations": 5584,
+        "num_nodes": 43440,
+        "num_arcs": 88137,
+        "route_length": 1003,
+        "timestamp_range": [
+          1.0,
+          7195.0
+        ],
+        "duration_seconds": 7194.0,
+        "mean_dt": 1.2885545405695862,
+        "max_dt": 50.0,
+        "lon_range": [
+          -51.669044,
+          -51.187225
+        ],
+        "lat_range": [
+          -29.701688,
+          -29.391487
+        ]
+      },
+      {
+        "trip_id": "00000099",
+        "num_observations": 2322,
+        "num_nodes": 34252,
+        "num_arcs": 72870,
+        "route_length": 886,
+        "timestamp_range": [
+          1.0,
+          2356.0
+        ],
+        "duration_seconds": 2355.0,
+        "mean_dt": 1.014648858250754,
+        "max_dt": 25.0,
+        "lon_range": [
+          135.798398,
+          135.970535
+        ],
+        "lat_range": [
+          34.861312,
+          34.933419
+        ]
+      }
+    ]
+  },
+  "student_test": {
+    "num_trips": 10,
+    "total_gps_observations": 19160,
+    "total_nodes": 90689,
+    "total_arcs": 185041,
+    "total_route_arcs": 3477,
+    "avg_obs_per_trip": 1916.0,
+    "avg_nodes_per_trip": 9068.9,
+    "avg_arcs_per_trip": 18504.1,
+    "avg_route_len": 347.7,
+    "lon_range": [
+      -93.424337,
+      77.271115
+    ],
+    "lat_range": [
+      42.645529,
+      61.69959
+    ],
+    "timestamp_range": [
+      1.0,
+      4001.0
+    ],
+    "trip_ids": [
+      "00000000",
+      "00000007",
+      "00000009",
+      "00000040",
+      "00000052",
+      "00000056",
+      "00000065",
+      "00000076",
+      "00000077",
+      "00000091"
+    ],
+    "partition": "student_test",
+    "per_trip": [
+      {
+        "trip_id": "00000000",
+        "num_observations": 2503,
+        "num_nodes": 8542,
+        "num_arcs": 18196,
+        "route_length": 179,
+        "timestamp_range": [
+          1.0,
+          2504.0
+        ],
+        "duration_seconds": 2503.0,
+        "mean_dt": 1.0003996802557953,
+        "max_dt": 2.0,
+        "lon_range": [
+          54.248491,
+          54.963519
+        ],
+        "lat_range": [
+          56.08056,
+          56.254566
+        ]
+      },
+      {
+        "trip_id": "00000007",
+        "num_observations": 1354,
+        "num_nodes": 2061,
+        "num_arcs": 4369,
+        "route_length": 123,
+        "timestamp_range": [
+          1.0,
+          1354.0
+        ],
+        "duration_seconds": 1353.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          77.122052,
+          77.271115
+        ],
+        "lat_range": [
+          43.388762,
+          43.496413
+        ]
+      },
+      {
+        "trip_id": "00000009",
+        "num_observations": 1049,
+        "num_nodes": 6745,
+        "num_arcs": 13106,
+        "route_length": 429,
+        "timestamp_range": [
+          1.0,
+          1050.0
+        ],
+        "duration_seconds": 1049.0,
+        "mean_dt": 1.0009541984732824,
+        "max_dt": 2.0,
+        "lon_range": [
+          13.631991,
+          13.70662
+        ],
+        "lat_range": [
+          42.645529,
+          42.662443
+        ]
+      },
+      {
+        "trip_id": "00000040",
+        "num_observations": 2995,
+        "num_nodes": 12945,
+        "num_arcs": 27026,
+        "route_length": 309,
+        "timestamp_range": [
+          1.0,
+          2995.0
+        ],
+        "duration_seconds": 2994.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          61.069448,
+          61.292663
+        ],
+        "lat_range": [
+          55.175283,
+          55.416496
+        ]
+      },
+      {
+        "trip_id": "00000052",
+        "num_observations": 262,
+        "num_nodes": 1770,
+        "num_arcs": 3577,
+        "route_length": 95,
+        "timestamp_range": [
+          1.0,
+          266.0
+        ],
+        "duration_seconds": 265.0,
+        "mean_dt": 1.0153256704980842,
+        "max_dt": 2.0,
+        "lon_range": [
+          35.858383,
+          35.896431
+        ],
+        "lat_range": [
+          56.795125,
+          56.827472
+        ]
+      },
+      {
+        "trip_id": "00000056",
+        "num_observations": 3958,
+        "num_nodes": 14759,
+        "num_arcs": 27631,
+        "route_length": 1323,
+        "timestamp_range": [
+          1.0,
+          4001.0
+        ],
+        "duration_seconds": 4000.0,
+        "mean_dt": 1.0108668182966893,
+        "max_dt": 3.0,
+        "lon_range": [
+          -93.424337,
+          -93.348525
+        ],
+        "lat_range": [
+          44.836021,
+          44.8734
+        ]
+      },
+      {
+        "trip_id": "00000065",
+        "num_observations": 768,
+        "num_nodes": 6448,
+        "num_arcs": 13184,
+        "route_length": 145,
+        "timestamp_range": [
+          1.0,
+          1038.0
+        ],
+        "duration_seconds": 1037.0,
+        "mean_dt": 1.3520208604954367,
+        "max_dt": 210.0,
+        "lon_range": [
+          49.263178,
+          49.329869
+        ],
+        "lat_range": [
+          53.512628,
+          53.53894
+        ]
+      },
+      {
+        "trip_id": "00000076",
+        "num_observations": 1486,
+        "num_nodes": 26635,
+        "num_arcs": 56027,
+        "route_length": 374,
+        "timestamp_range": [
+          1.0,
+          2267.0
+        ],
+        "duration_seconds": 2266.0,
+        "mean_dt": 1.525925925925926,
+        "max_dt": 32.0,
+        "lon_range": [
+          43.961393,
+          44.033831
+        ],
+        "lat_range": [
+          56.240407,
+          56.328848
+        ]
+      },
+      {
+        "trip_id": "00000077",
+        "num_observations": 3911,
+        "num_nodes": 4424,
+        "num_arcs": 9622,
+        "route_length": 268,
+        "timestamp_range": [
+          1.0,
+          3911.0
+        ],
+        "duration_seconds": 3910.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          50.788938,
+          50.841452
+        ],
+        "lat_range": [
+          61.639754,
+          61.69959
+        ]
+      },
+      {
+        "trip_id": "00000091",
+        "num_observations": 874,
+        "num_nodes": 6360,
+        "num_arcs": 12303,
+        "route_length": 232,
+        "timestamp_range": [
+          1.0,
+          874.0
+        ],
+        "duration_seconds": 873.0,
+        "mean_dt": 1.0,
+        "max_dt": 1.0,
+        "lon_range": [
+          2.411206,
+          2.443703
+        ],
+        "lat_range": [
+          47.053146,
+          47.099623
+        ]
+      }
+    ]
+  }
+}
