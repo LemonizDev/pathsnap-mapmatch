@@ -90,7 +90,6 @@ Report the following where applicable:
 
 - Confusion Matrix
 
-- Log Loss
 
 - Observation-level Top-1 Accuracy
 
@@ -117,6 +116,8 @@ Compare at least five trained models.
 Your comparison should identify:
 
 - Model name.
+
+- Log Loss
 
 - Algorithm family.
 
