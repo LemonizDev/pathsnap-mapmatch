@@ -8,6 +8,15 @@ Repository: `https://github.com/LemonizDev/pathsnap-mapmatch.git`
 
 The canonical branch is `main`.
 
+## Codex and Kilo delegation
+
+- On Nimit's computer, Codex is the project orchestrator and Kilo Code is the implementation agent. For implementation, refactoring, repository changes, test execution, commits, and pushes, Codex should use the existing Kilo Code session intelligently instead of implementing directly, unless Kilo is unavailable or the user explicitly requests direct Codex work.
+- Reuse the existing Kilo Code session in this project whenever possible. Do not create repeated or disposable sessions for ordinary subtasks. Use the Nemotron 3 Ultra free gateway when it is available and appropriate.
+- Codex must remain the coordination layer: inspect the request, give Kilo a bounded task, approve only the required permissions, verify Kilo's reported result, and clearly report anything Kilo could not verify. Do not invent test results, commit hashes, push results, or metrics.
+- Kilo orchestration is authorized only on Nimit's computer. The project files may also exist on a teammate's computer, but that does not transfer Nimit's orchestration role.
+- If the current machine is not Nimit's computer, do not delegate to Kilo Code, do not start a Kilo session, and do not impersonate the Nimit-laptop orchestrator. Work only within the local teammate workflow and hand off changes through the documented Git process.
+- In particular, on a teammate's Antigravity setup, ignore the Nimit-laptop Kilo delegation instructions and do not run Kilo Code. The teammate may implement their assigned work locally, then commit or hand off it according to the Git workflow below.
+
 ## Two-laptop setup
 
 - Backend laptop: runs the FastAPI/API and ML pipeline.

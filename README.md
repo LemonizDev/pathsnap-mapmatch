@@ -72,11 +72,11 @@ pytest tests/ -v
 ├── experiments/        # Logs, metrics, artifacts
 ├── notebooks/          # EDA notebooks
 ├── requirements.txt    # Python dependencies
-├── TASKS.md           # Task tracker with statuses
-├── TEAM_ROLES.md      # Team delegation matrix
-├── ARCHITECTURE.md    # System design (reconnaissance level)
-├── MILESTONE_1130.md  # This milestone report
-└── EXPERIMENTS.md     # Experiment log (measured results only)
+├── context/initial/TASKS.md           # Task tracker with statuses
+├── context/initial/TEAM_ROLES.md      # Team delegation matrix
+├── context/initial/ARCHITECTURE.md    # System design (reconnaissance level)
+├── context/initial/MILESTONE_1130.md  # This milestone report
+└── context/initial/EXPERIMENTS.md     # Experiment log (measured results only)
 ```
 
 ---
@@ -133,7 +133,7 @@ Per-trip directory with 4 files (whitespace-separated, no headers):
 - No evaluator test data used for training
 - Ground truth never exposed to client/UI
 - Experiment logs record only measured results
-- See `Assessment and Plagiarism Policy.md` for full guidelines
+- See `context/planning/Assessment and Plagiarism Policy.md` for full guidelines
 
 ---
 
