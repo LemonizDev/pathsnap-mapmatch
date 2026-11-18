@@ -1,5 +1,5 @@
 # PathSnap — System Architecture (Reconnaissance Level)
-
+# PathSnap — System Architecture (Reconnaissance Level)
 **Milestone:** 11:30 Evaluation (Preprocessing & Feature Engineering Baseline)  
 **Date:** 18 November 2026  
 **Status:** Approved design — implementation in progress
