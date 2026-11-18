@@ -1,0 +1,78 @@
+# PathSnap — Git Ignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (supplied datasets - do not commit)
+Student folder/
+*.track
+*.nodes
+*.arcs
+*.route
+
+# Experiments & Artifacts
+experiments/*.pkl
+experiments/*.npz
+experiments/*.joblib
+models/*.pkl
+models/*.joblib
+*.onnx
+
+# Logs
+*.log
+logs/
+mlruns/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment
+.env
+.env.local
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Distribution
+*.whl
+*.tar.gz
