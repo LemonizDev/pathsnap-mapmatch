@@ -18,7 +18,7 @@ from fastapi import FastAPI, HTTPException, Request, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from src.api.config import settings
+from src.api import config
 from src.api.schemas import (
     PredictRequest,
     PredictResponse,
@@ -53,10 +53,10 @@ app = FastAPI(
 # CORS middleware for two-laptop demo
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.cors.allow_origins,
-    allow_credentials=settings.cors.allow_credentials,
-    allow_methods=settings.cors.allow_methods,
-    allow_headers=settings.cors.allow_headers,
+    allow_origins=config.settings.cors.allow_origins,
+    allow_credentials=config.settings.cors.allow_credentials,
+    allow_methods=config.settings.cors.allow_methods,
+    allow_headers=config.settings.cors.allow_headers,
 )
 
 
@@ -80,7 +80,7 @@ async def health_check(loader: ArtifactLoader = Depends(get_loader)) -> HealthRe
     # Overall status: ok if at least mock mode works, degraded if artifacts missing but mock enabled
     if model_loaded and hmm_loaded:
         status = "ok"
-    elif settings.mock_enabled:
+    elif config.settings.mock_enabled:
         status = "degraded"  # Running in mock mode
     else:
         status = "degraded"  # No artifacts and no mock
@@ -92,7 +92,7 @@ async def health_check(loader: ArtifactLoader = Depends(get_loader)) -> HealthRe
         hmm_loaded=hmm_loaded,
         hmm_source=hmm_source,
         trips_available=len(loader.student_test_trip_ids),
-        mock_mode=settings.mock_enabled,
+        mock_mode=config.settings.mock_enabled,
         version=app.version,
     )
 
@@ -154,7 +154,7 @@ async def predict(
         # Stage 2: Model inference + HMM/Viterbi (real or mock)
         model_start = time.perf_counter()
         
-        if loader.model_artifacts.loaded and loader.hmm_params.loaded and not settings.mock_enabled:
+        if loader.model_artifacts.loaded and loader.hmm_params.loaded and not config.settings.mock_enabled:
             # Real model + HMM prediction
             predicted_route, accuracy, map_html, model_ms, hmm_ms = loader.predict_with_model(trip_id, candidate_sets)
         else:
@@ -216,8 +216,8 @@ if __name__ == "__main__":
     import uvicorn
     uvicorn.run(
         "src.api.main:app",
-        host=settings.api.host,
-        port=settings.api.port,
-        reload=settings.api.reload,
-        log_level=settings.api.log_level,
+        host=config.settings.api.host,
+        port=config.settings.api.port,
+        reload=config.settings.api.reload,
+        log_level=config.settings.api.log_level,
     )

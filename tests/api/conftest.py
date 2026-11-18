@@ -9,8 +9,9 @@ from pathlib import Path
 
 import pytest
 
-# Add src to path
-sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+# Add repository src to path
+REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "src"))
 
 # Global thread limits
 os.environ.setdefault("OPENBLAS_NUM_THREADS", "1")
@@ -20,7 +21,7 @@ os.environ.setdefault("NUMEXPR_NUM_THREADS", "1")
 
 # Default to real-artifact mode
 os.environ["MOCK_MODE"] = "false"
-os.environ["DATA_ROOT"] = str(Path(__file__).parent.parent / "Student folder" / "Student folder")
+os.environ["DATA_ROOT"] = str(REPO_ROOT / "Student folder" / "Student folder")
 os.environ.setdefault("OPENBLAS_NUM_THREADS", "1")
 
 
@@ -64,10 +65,10 @@ def real_artifact_client():
     from fastapi.testclient import TestClient
     
     os.environ["MOCK_MODE"] = "false"
-    os.environ["DATA_ROOT"] = str(Path(__file__).parent.parent / "Student folder" / "Student folder")
-    os.environ["MODEL_PATH"] = str(Path(__file__).parent.parent / "experiments" / "models" / "LightGBM_final.pkl")
-    os.environ["MODEL_META_PATH"] = str(Path(__file__).parent.parent / "experiments" / "models" / "LightGBM_final_meta.json")
-    os.environ["HMM_PARAMS_PATH"] = str(Path(__file__).parent.parent / "experiments" / "models" / "hmm_params.json")
+    os.environ["DATA_ROOT"] = str(REPO_ROOT / "Student folder" / "Student folder")
+    os.environ["MODEL_PATH"] = str(REPO_ROOT / "experiments" / "models" / "LightGBM_final.pkl")
+    os.environ["MODEL_META_PATH"] = str(REPO_ROOT / "experiments" / "models" / "LightGBM_final_meta.json")
+    os.environ["HMM_PARAMS_PATH"] = str(REPO_ROOT / "experiments" / "models" / "hmm_params.json")
     os.environ.setdefault("OPENBLAS_NUM_THREADS", "1")
     
     # Reset artifact loader to ensure clean state

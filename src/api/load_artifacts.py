@@ -17,7 +17,8 @@ from typing import Any, Dict, List, Optional, Tuple
 import joblib
 import numpy as np
 
-from src.api.config import settings, ArtifactPaths
+from src.api import config
+from src.api.config import ArtifactPaths
 from src.data.loader import TripData, load_trip, discover_trips
 from src.features.candidates import (
     Candidate,
@@ -195,8 +196,8 @@ class ArtifactLoader:
         mock_mode: bool = None,
         mock_seed: int = 42
     ):
-        self.paths = artifact_paths or settings.artifacts
-        self.mock_mode = mock_mode if mock_mode is not None else settings.mock_enabled
+        self.paths = artifact_paths or config.settings.artifacts
+        self.mock_mode = mock_mode if mock_mode is not None else config.settings.mock_enabled
         self.mock_seed = mock_seed
 
         self.model_artifacts = ModelArtifacts()
@@ -377,7 +378,7 @@ class ArtifactLoader:
             warnings.warn(f"Student test directory not found: {test_dir}")
             self._student_test_trip_ids = []
 
-        settings.student_test_trip_ids = self._student_test_trip_ids
+        config.settings.student_test_trip_ids = self._student_test_trip_ids
 
     @property
     def student_test_trip_ids(self) -> List[str]:
@@ -578,12 +579,12 @@ class ArtifactLoader:
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
-        #map { height: 500px; width: 100% !important; }
-        .legend {
+        #map {{ height: 500px; width: 100% !important; }}
+        .legend {{
             position: absolute; bottom: 50px; left: 50px; z-index: 1000;
             background: white; padding: 10px; border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2); font-size: 12px;
-        }
+        }}
     </style>
 </head>
 <body>
@@ -635,9 +636,9 @@ def get_artifact_loader() -> ArtifactLoader:
     global artifact_loader
     if artifact_loader is None:
         artifact_loader = ArtifactLoader(
-            artifact_paths=settings.artifacts,
-            mock_mode=settings.mock_enabled,
-            mock_seed=settings.mock.seed,
+            artifact_paths=config.settings.artifacts,
+            mock_mode=config.settings.mock_enabled,
+            mock_seed=config.settings.mock.seed,
         )
     return artifact_loader
 
@@ -650,9 +651,9 @@ def reset_artifact_loader() -> None:
 def init_artifacts() -> ArtifactLoader:
     global artifact_loader
     artifact_loader = ArtifactLoader(
-        artifact_paths=settings.artifacts,
-        mock_mode=settings.mock_enabled,
-        mock_seed=settings.mock.seed,
+        artifact_paths=config.settings.artifacts,
+        mock_mode=config.settings.mock_enabled,
+        mock_seed=config.settings.mock.seed,
     )
     artifact_loader.load_all()
     return artifact_loader
