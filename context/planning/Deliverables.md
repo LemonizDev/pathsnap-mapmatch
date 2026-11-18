@@ -127,7 +127,7 @@ The following questions must be answered for each individual model.
 ## B. Training and Configuration
 
 - 5. What were the important hyperparameters and their initial values?
-
+- 5. What were the important hyperparameters and their initial values?
 - 6. What loss function or optimisation objective was used?
 
 ## C. Experimental Results
