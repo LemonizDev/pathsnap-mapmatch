@@ -40,11 +40,6 @@ ENV/
 Thumbs.db
 
 # Data (supplied datasets - do not commit)
-Student folder/
-*.track
-*.nodes
-*.arcs
-*.route
 
 # Experiments & Artifacts
 experiments/*.pkl
